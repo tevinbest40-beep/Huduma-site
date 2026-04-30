@@ -1,0 +1,57 @@
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  margin: 0;
+}
+
+header {
+  padding: 15px;
+  background: #1e293b;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  width: 90%;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.services {
+  padding: 10px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: #334155;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background: #1e293b;
+}
+
+footer button {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  background: none;
+  color: white;
+}
+
+.active {
+  color: #38bdf8;
+}
