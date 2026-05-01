@@ -1,4 +1,8 @@
-.player {
+iframe {
+  border: 2px solid yellow;
+  box-shadow: 0 0 20px yellow;
+  border-radius: 12px;
+}.player {
   filter: drop-shadow(0 0 10px yellow);
   background: black;
   border-radius: 10px;
