@@ -1,4 +1,13 @@
-<audio id="clickSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio><div class="social-icons">
+<script>
+  const sound = document.getElementById("clickSound");
+
+  document.querySelectorAll("button, a").forEach(el => {
+    el.addEventListener("click", () => {
+      sound.currentTime = 0;
+      sound.play();
+    });
+  });
+    </script><audio id="clickSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio><div class="social-icons">
   <a href="https://wa.me/254793981523" target="_blank" class="whatsapp">
     <i class="fab fa-whatsapp"></i>
   </a>
