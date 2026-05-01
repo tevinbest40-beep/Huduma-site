@@ -1,4 +1,12 @@
-<button onclick="showOrderGuide()" class="order-btn">Order Now</button>
+<script>
+function showOrderGuide() {
+  document.getElementById("orderGuide").style.display = "block";
+}
+
+function closeOrderGuide() {
+  document.getElementById("orderGuide").style.display = "none";
+}
+</script><button onclick="showOrderGuide()" class="order-btn">Order Now</button>
 
 <div id="orderGuide" class="order-popup">
   <div class="popup-content">
