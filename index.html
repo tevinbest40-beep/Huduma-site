@@ -1,4 +1,12 @@
+<audio id="clickSound" src="click.mp3"></audio>
+
 <script>
+document.querySelectorAll("button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.getElementById("clickSound").play();
+  });
+});
+</script><script>
 function showOrderGuide() {
   document.getElementById("orderGuide").style.display = "block";
 }
