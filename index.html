@@ -1,4 +1,179 @@
-<script>
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Void Whisper Promotions</title><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"><style>
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #050505;
+  color: #00ffcc;
+}
+
+/* Neon Glow */
+.neon {
+  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #00ffcc;
+}
+
+.banner {
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid #00ffcc;
+  border-bottom: 1px solid #00ffcc;
+}
+
+.banner p {
+  display: inline-block;
+  padding: 10px;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #00ffcc;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffcc;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 25px #00ffcc;
+  transform: scale(1.03);
+}
+
+button {
+  background: transparent;
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #00ffcc;
+  color: #000;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  box-shadow: 0 0 15px #25D366;
+}
+
+.testimonials {
+  margin-top: 30px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #00ffcc;
+  margin-top: 30px;
+}
+</style></head><body><header>
+  <h1 class="neon">VOID WHISPER ☯️☢️</h1>
+  <p>Cyberpunk Promotion Hub</p>
+</header><div class="banner">
+  <p class="neon">🔥 BUY NOW • WE DELIVER • FAST RESULTS • VOID WHISPER PROMOTIONS 🔥</p>
+</div><div class="container">  <div class="card">
+    <h3>📈 Ads & Marketing</h3>
+    <p>KSH 20</p>
+    <button onclick="order('Ads & Marketing')">Order Now</button>
+  </div>  <div class="card">
+    <h3>🎵 Music Promotion</h3>
+    <p>KSH 13</p>
+    <button onclick="order('Music Promotion')">Order Now</button>
+  </div>  <div class="card">
+    <h3>📸 Instagram Branding</h3>
+    <p>KSH 8</p>
+    <button onclick="order('Instagram Branding')">Order Now</button>
+  </div>  <div class="card">
+    <h3>📊 Social Media Management</h3>
+    <p>KSH 20</p>
+    <button onclick="order('Social Media Management')">Order Now</button>
+  </div>  <div class="testimonials">
+    <h2 class="neon">What Clients Say</h2>
+    <p>⭐ "Got 2K followers in days!"</p>
+    <p>⭐ "Fast and legit service 🔥"</p>
+    <p>⭐ "Best promo in Kenya"</p>
+  </div></div><a href="https://wa.me/254793981523" class="floating-whatsapp">💬</a>
+
+<div class="footer">
+  <p class="neon">© Void Whisper Promotions</p>
+</div><script>
+function order(service) {
+  let number = "254793981523";
+  let message = `Hello, I want ${service}`;
+  window.open(`https://wa.me/${number}?text=${encodeURIComponent(message)}`);
+}
+</script><!-- Live Orders Popup --><style>
+.live-popup {
+  position: fixed;
+  bottom: 90px;
+  left: 20px;
+  background: rgba(0,0,0,0.85);
+  border: 1px solid #00ffcc;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffcc;
+  color: #00ffcc;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s;
+}
+
+.live-popup.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style><div id="livePopup" class="live-popup"></div><script>
+const services = [
+  "Ads & Marketing",
+  "Music Promotion",
+  "Instagram Branding",
+  "Social Media Management"
+];
+
+function showPopup() {
+  const popup = document.getElementById("livePopup");
+  const service = services[Math.floor(Math.random() * services.length)];
+
+  popup.innerText = `⚡ Someone just bought ${service}`;
+  popup.classList.add("show");
+
+  setTimeout(() => {
+    popup.classList.remove("show");
+  }, 3000);
+}
+
+setInterval(showPopup, 6000);
+</script></body>
+</html><script>
   function openWhatsApp() {
     window.open("https://wa.me/254793981523?text=Hello, I need your services");
   }
