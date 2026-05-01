@@ -1,4 +1,38 @@
-.vertical {
+.social-icons {
+  position: fixed;
+  right: 15px;
+  bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.social-icons a {
+  font-size: 24px;
+  padding: 12px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* WhatsApp */
+.social-icons .whatsapp {
+  background: #25D366;
+  box-shadow: 0 0 10px #25D366, 0 0 20px #25D366;
+}
+
+/* Instagram */
+.social-icons .instagram {
+  background: linear-gradient(45deg, #fccc63, #e1306c, #833ab4);
+  box-shadow: 0 0 10px #e1306c, 0 0 20px #833ab4;
+}
+
+/* Hover effect */
+.social-icons a:hover {
+  transform: scale(1.2);
+}.vertical {
   position: fixed;
   top: 50%;
   transform: translateY(-50%) rotate(90deg);
