@@ -1,4 +1,17 @@
-.order-btn {
+.logo-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo-container img {
+  width: 220px;
+  filter: drop-shadow(0 0 15px #a855f7) drop-shadow(0 0 30px #3b82f6);
+  transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+  transform: scale(1.08);
+}.order-btn {
   background: black;
   color: #00ffcc;
   border: 2px solid #00ffcc;
