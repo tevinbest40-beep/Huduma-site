@@ -76,7 +76,7 @@ Hosted using GitHub Pages:https://tevinbest40-beep.github.io/Huduma-site/
 
 ## 👤 Creator
 
-Built by **Tevin Best**
+Built by **Void Whisper**
 
 📱 Contact: 0793981523  
 🌍 Location: Kenya
